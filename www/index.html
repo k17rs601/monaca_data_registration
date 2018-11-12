@@ -11,10 +11,10 @@
         var ncmb = new NCMB(appKey, clientKey);
 
         function startDemo() {
-            var TestClass = ncmb.DataStore("TestClass");
+            var TestClass = ncmb.DataStore("TestClass1");
             var testClass = new TestClass();
-            var key   = "message";
-            var value = "Hello, NCMB!";
+            var key   = "name";
+            var value = "Hello";
             testClass.set(key, value);
             testClass.save()
                 .then(function() {
